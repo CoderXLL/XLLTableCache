@@ -92,8 +92,7 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "XLLTableCache/*.{h,m}"
-  # s.exclude_files = "Classes/Exclude"
-
+  s.vendored_libraries   = 'XLLTableCache/*.a'
   # s.public_header_files = "Classes/**/*.h"
 
 
