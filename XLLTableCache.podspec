@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-	XLLTableCache.
+	named XLLTableCache.
                    DESC
 
   s.homepage     = "https://github.com/b593771943/XLLTableCache"
@@ -92,7 +92,8 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "XLLTableCache/*.{h}"
-  s.vendored_libraries   = 'XLLTableCache/*.a'
+  s.preserve_paths         = 'XLLTableCache/*.a'
+  # s.vendored_libraries   = 'XLLTableCache/*.a'
   # s.public_header_files = "Classes/**/*.h"
 
 
